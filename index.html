@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Quest</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+      <h1>Dragon Quest</h1>
+      <p>Embark on a Gothic adventure and find the dragon's treasure!</p>
+      <button id="start-btn">Start Game</button>
+    </div>
+    
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen"> 
+      <h2>The Dragon Appears!</h2>
+      <p>Choose your next move:</p>
+      <button class="action-btn" data-action="fight">Fight</button>
+      <button class="action-btn" data-action="befriend">Befriend</button>
+    </div>
+
+    <!-- End Screen -->
+    <div id="end-screen" class="screen">
+      <h2>Congratulations!</h2>
+      <p>You have completed your quest!</p>
+      <h1 id="birthday-message">Happy Birthday, Bestie!</h1>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
